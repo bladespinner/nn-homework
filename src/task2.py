@@ -33,15 +33,10 @@ def load_data():
 
 nn = Regressor(
     layers=[
-        Layer("Linear", units=49),
-        Layer("Linear", units=120),
+        Layer("Linear", units=15),
         Layer("Linear", units=49)],
     learning_rate=2e-6,
-    n_iter=50)
-
-# pipe = Pipeline(
-#     [MinMaxScaler(feature_range=(0, 1)),
-#     nn])
+    n_iter=100)
 
 data = load_data();
 
