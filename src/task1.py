@@ -24,6 +24,8 @@ data = load_data();
 
 cross_validation_sets = 10
 
+print len(data["x"])
+
 mse = cross_validation.cross_val_score(nn, data["x"], data["y"], cv=cross_validation_sets, scoring='mean_squared_error')
 rmse = [(-x) ** 0.5 for x in mse]
 avrg_rmse = reduce(lambda x,y: x + y, rmse) / cross_validation_sets;
