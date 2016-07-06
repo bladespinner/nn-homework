@@ -1,0 +1,9 @@
+Lasagne==0.1
+Theano==0.8.2
+argparse==1.2.1
+numpy==1.11.1
+scikit-learn==0.17.1
+scikit-neuralnetwork==0.7
+scipy==0.17.1
+six==1.10.0
+wsgiref==0.1.2
